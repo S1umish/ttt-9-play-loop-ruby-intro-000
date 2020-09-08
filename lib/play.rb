@@ -36,3 +36,31 @@ def turn(board)
 end
 
 # Define your play method below
+# def play(board)
+#   puts "play calls turn nine times"
+#   display_board(board)
+#   turn == 9
+#   counter = 0
+#   loop do
+#     counter += 1
+#     turn(board)
+#     if counter >= turns
+#       puts "You only get #{turns} turns!"
+#     end
+#   end
+# end
+def play(board)
+  puts "calls turn nine times"
+  input = gets.strip
+  board = ["X", " ", " ", " ", " ", " ", " ", " ", " "]
+  counter = 0
+  turn == 9
+  loop do
+    counter +=1
+    turn(board)
+  if counter >= turn
+    puts "You only get #{turn} turn!"
+  display_board(board)
+  end
+end
+end
